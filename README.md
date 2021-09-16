@@ -1,5 +1,5 @@
-# Пример JWT аутентификации в приложении Vue.js
+# vue-vuex-jwt-authentication-example
 
-Vue + Vuex - JWT Authentication
+Vue + Vuex - JWT Authentication Tutorial & Example
 
-Демо и подробное описание смотрите на странице https://emackovenko.ru/vue-js-vuex-jwt-autentifikaciya-instrukciya-prime/
+To see a demo and further details go to http://jasonwatmore.com/post/2018/07/06/vue-vuex-jwt-authentication-tutorial-example

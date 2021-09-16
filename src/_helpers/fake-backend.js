@@ -1,6 +1,5 @@
 export function configureFakeBackend() {
-    let users = [{ id: 1, username: 'test', password: 'test', firstName: 'Уважаемый', lastName: 'Пользователь' },
-        { id: 2, username: 'user', password: 'user', firstName: 'Тестовый', lastName: 'Пользователь' }];
+    let users = [{ id: 1, username: 'test', password: 'test', firstName: 'Читатель', lastName: 'Дорогой' }];
     let realFetch = window.fetch;
     window.fetch = function (url, opts) {
         return new Promise((resolve, reject) => {
@@ -30,7 +29,7 @@ export function configureFakeBackend() {
                         resolve({ ok: true, text: () => Promise.resolve(JSON.stringify(responseJson)) });
                     } else {
                         // else return error
-                        reject('Пользователь не найден');
+                        reject('Username or password is incorrect');
                     }
 
                     return;
